@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Inside of Reasoning: Uncovering Algebraic Structure in Bilinear MLPs</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #2c3e50; text-align: center; }
+        .authors { text-align: center; font-size: 1.1em; margin-bottom: 5px; }
+        .affiliation { text-align: center; color: #666; font-style: italic; margin-bottom: 30px; }
+        .buttons { text-align: center; margin: 30px 0; }
+        .btn { background-color: #0366d6; color: white; padding: 12px 24px; text-decoration: none; border-radius: 6px; font-weight: bold; }
+        .btn:hover { background-color: #0255b3; }
+        .abstract-box { background-color: #f6f8fa; padding: 20px; border-radius: 8px; border: 1px solid #e1e4e8; }
+        .bibtex { background-color: #f1f1f1; padding: 15px; font-family: monospace; font-size: 0.9em; overflow-x: auto; border-radius: 5px; }
+        hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
+    </style>
+</head>
+<body>
+
+    <h1>The Inside of Reasoning: Uncovering Algebraic Structure in Bilinear MLPs</h1>
+    
+    <div class="authors">
+        Kaustubh Sharma and Aditya Chauhan
+    </div>
+    <div class="affiliation">
+        Indian Institute of Technology (IIT) Roorkee, Uttarakhand, India
+    </div>
+
+    <div class="buttons">
+        <a href="paper.pdf" class="btn" target="_blank">📄 Read the Paper (PDF)</a>
+    </div>
+
+    <h3>Abstract</h3>
+    <div class="abstract-box">
+        <p>
+            Standard ReLU MLPs can solve simple algebraic and relational tasks, but the internal mechanisms they learn are often hard to express in simple symbolic terms. Recent work has proposed bilinear MLP layers as an alternative with more structured, tensor-based interactions that may be analyzed directly from weights.
+        </p>
+        <p>
+            In this paper, we compare bilinear and ReLU MLPs on two controlled settings where the ground-truth computation is exactly known. First, on modular addition and multiplication, we extract class-wise interaction matrices from each model and study them in Fourier and singular-value bases. For addition, the bilinear model recovers operators whose Fourier spectra closely match the ideal circulant structure, whereas the ReLU model concentrates energy on a few frequencies. For multiplication, the bilinear operators are consistently lower-rank and show steeper singular-value decay.
+        </p>
+        <p>
+            Second, on a relational composition task over a cycle of N=400 entities, the bilinear model learns an almost permutation-like successor operator whose powers remain accurate for many steps, while the ReLU operator is diffuse and collapses to near-uniform under composition. These results suggest that bilinear MLPs induce internal operators that are closer to explicit symbolic rules, and are promising building blocks for more interpretable neuro-symbolic systems.
+        </p>
+    </div>
+
+    <hr>
+
+    <h3>Citation</h3>
+    <p>Published as a workshop paper at the NeusymBridge Workshop (AAAI 2026).</p>
+    <div class="bibtex">
+@inproceedings{sharma2026bilinear,
+  title={The Inside of Reasoning: Uncovering Algebraic Structure in Bilinear MLPs},
+  author={Sharma, Kaustubh and Chauhan, Aditya},
+  booktitle={NeusymBridge Workshop (AAAI 2026)},
+  year={2026},
+  organization={IIT Roorkee}
+}
+    </div>
+
+</body>
+</html>
